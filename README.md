@@ -3,15 +3,16 @@
 **SingleSocial** is a multi-platform social media management app that helps users manage multiple accounts across various platforms like Facebook, Twitter, Instagram, and more. The app includes core features like content scheduling, analytics, and feed management, with additional premium features for more advanced analytics and unified messaging.
 
 ## Tech Stack
-- **Web**: React
-- **Mobile**: React Native (Expo)
-- **Backend**: Node.js, Express, MongoDB/PostgreSQL
+- **Web**: React, Redux Toolkit, React Router
+- **Mobile**: React Native (Expo), Redux Toolkit, React Navigation
+- **Backend**: Node.js, Express, MongoDB
 - **State Management**: Redux
 
 ## Features
 ### Core Features
 - Multi-platform management
 - Content Planner and scheduling
+- Feeds Dashboard
 - Basic analytics and dashboard
 
 ### Premium Features
@@ -19,34 +20,14 @@
 - Unified Messaging
 - Flexible Platform Integrations
 
-## Setup Instructions
-### Local Development Setup
-1. Clone the repository:
-   \\\ash
-   git clone https://github.com/bastardacademic/SingleSocial.git
-   cd SingleSocial
-   \\\
-
-2. **Web Setup**:
-   \\\ash
-   cd web
-   npm install
-   npm start
-   \\\
-
-3. **Mobile Setup**:
-   \\\ash
-   cd mobile
-   npm install
-   expo start
-   \\\
-
-4. **Backend Setup**:
-   \\\ash
-   cd backend
-   npm install
-   node server.js
-   \\\
+## Current Progress
+- **Backend**:
+  - User Authentication and OAuth for social media platforms
+  - Routes for Feeds, Content Planner, and Analytics
+- **Web Frontend**:
+  - React app initialized with authentication and dashboard pages.
+- **Mobile Frontend**:
+  - React Native app initialized with basic screens and navigation.
 
 ## Contribution
-Feel free to fork and contribute to this project. Please follow the guidelines for pull requests.
+Feel free to fork and contribute to this project. Please follow the guidelines in [CONTRIBUTING.md](docs/CONTRIBUTING.md).
