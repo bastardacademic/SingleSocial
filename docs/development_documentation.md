@@ -3,12 +3,13 @@
 ## Project Structure
 The application is structured as follows:
 
+```mermaid
 graph TD
   A[Web App React] -->|API Calls| B[Backend Node.js Express]
   C[Mobile App React Native] -->|API Calls| B
   B --> D[Database MongoDB PostgreSQL]
   B --> E[Social Media APIs]
-
+```
 
 ## API Integrations
 - **Social Media APIs**: Each platform (Facebook, Twitter, Instagram) will use its own API for fetching data and posting content.
