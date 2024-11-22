@@ -1,29 +1,32 @@
 ﻿# Roadmap
 
 ## Project Overview
-SingleSocial is designed to be a flexible and scalable social media management tool that works across web and mobile platforms. The project is built using React for the web and React Native for mobile, with a backend in Node.js/Express and MongoDB/PostgreSQL.
+SingleSocial is a multi-platform social media management tool that works across web and mobile platforms. The project is built using React for the web, React Native for mobile, and Node.js/Express for the backend.
 
 ## Milestones
 
-### Phase 1: Concept & Design
-- Finalize feature list and core vs. premium features
-- Create wireframes and design mockups
-- Define UI/UX elements and color themes
+### Phase 1: Backend Development (Completed)
+- Set up authentication and user management (OAuth).
+- Create routes for Feeds, Planner, and Analytics.
+- Implement MongoDB schemas for users, posts, and analytics.
 
-### Phase 2: Development
-- Implement core functionality: multi-platform management, content planner, and analytics
-- Integrate APIs for social media platforms
-- Implement backend services and database structure
+### Phase 2: Frontend Development (In Progress)
+- **Web App**:
+  - [x] Initialize React app and configure routing and state management.
+  - [ ] Build authentication pages (Login/Signup).
+  - [ ] Develop Feeds Dashboard.
+  - [ ] Add Content Planner with calendar functionality.
+- **Mobile App**:
+  - [x] Initialize React Native app and configure navigation.
+  - [ ] Build authentication screens.
+  - [ ] Develop Feeds Dashboard.
+  - [ ] Add Content Planner with calendar functionality.
 
-### Phase 3: Testing & QA
-- Conduct usability testing and gather feedback
-- Bug fixing and optimization
-
-### Phase 4: Launch
-- Deploy for beta testing
-- Launch to production
+### Phase 3: Testing and QA
+- Conduct unit and integration tests for all routes and components.
+- Perform end-to-end tests for user flows.
+- Deploy for beta testing.
 
 ## Release Plan
-- Beta Launch: [Date]
-- Public Launch: [Date]
-- Version 1.1 (Enhancements & Bug Fixes): [Date]
+- Beta Launch: [Planned Date]
+- Public Launch: [Planned Date]
