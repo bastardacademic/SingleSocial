@@ -9,6 +9,7 @@ graph TD
   B[Mobile App (React Native)] -->|API Calls| C
   C --> D[Database (MongoDB/PostgreSQL)]
   C --> E[Social Media APIs]
+
 ```
 
 ## API Integrations
