@@ -5,7 +5,7 @@ The application is structured as follows:
 
 ```mermaid
 graph TD
-  A[Web App  (React)] -->|API Calls| C[Backend (Node.js/Express)]
+  A[Web App (React)] -->|API Calls| C[Backend (Node.js/Express)]
   B[Mobile App (React Native)] -->|API Calls| C
   C --> D[Database (MongoDB/PostgreSQL)]
   C --> E[Social Media APIs]
