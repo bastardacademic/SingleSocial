@@ -1,15 +1,18 @@
 ﻿# SingleSocial Backend
 
 ## Features
-1. **User Notifications**: Push notifications for reminders and updates.
-2. **Localization**: Multi-language support for error messages and API responses.
-3. **Audit Logging**: Track user actions for debugging and compliance.
-4. **Database Enhancements**: Sharding, TTL indexes, and optimized queries.
-5. **AI Integration**: Sentiment analysis and auto-captioning.
+- Real-time updates using WebSocket.
+- Redis caching for API performance optimization.
+- Multi-language localization using i18n.
+- OAuth2 authentication for connected platforms.
 
-## Deployment and Monitoring
-- CI/CD pipelines set up with GitHub Actions.
-- Integrated with monitoring tools like New Relic.
+## API Endpoints
+- **GET /api/feeds**: Fetch user feeds.
+- **POST /api/notifications**: Send user notifications.
 
-### Progress
-All major features implemented and ready for deployment.
+## Security
+- Enforced rate-limiting and IP whitelisting.
+- Data encryption for sensitive information.
+
+## Documentation
+Refer to the API documentation hosted at /api-docs.
