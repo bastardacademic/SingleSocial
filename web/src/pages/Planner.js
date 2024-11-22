@@ -4,12 +4,31 @@ const Planner = () => {
   const [posts, setPosts] = useState([]);
   const [content, setContent] = useState('');
   const [date, setDate] = useState('');
+  const [editingIndex, setEditingIndex] = useState(null);
 
   const handleSchedule = () => {
-    const newPost = { content, date };
-    setPosts([...posts, newPost]);
+    if (editingIndex !== null) {
+      const updatedPosts = [...posts];
+      updatedPosts[editingIndex] = { content, date };
+      setPosts(updatedPosts);
+      setEditingIndex(null);
+    } else {
+      const newPost = { content, date };
+      setPosts([...posts, newPost]);
+    }
     setContent('');
     setDate('');
+  };
+
+  const handleEdit = (index) => {
+    const post = posts[index];
+    setContent(post.content);
+    setDate(post.date);
+    setEditingIndex(index);
+  };
+
+  const handleDelete = (index) => {
+    setPosts(posts.filter((_, i) => i !== index));
   };
 
   return (
@@ -26,11 +45,13 @@ const Planner = () => {
         value={date}
         onChange={(e) => setDate(e.target.value)}
       />
-      <button onClick={handleSchedule}>Schedule Post</button>
+      <button onClick={handleSchedule}>{editingIndex !== null ? 'Update Post' : 'Schedule Post'}</button>
       <ul>
         {posts.map((post, index) => (
           <li key={index}>
             {post.content} - {post.date}
+            <button onClick={() => handleEdit(index)}>Edit</button>
+            <button onClick={() => handleDelete(index)}>Delete</button>
           </li>
         ))}
       </ul>
